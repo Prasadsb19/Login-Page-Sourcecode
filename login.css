@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hammersmitone',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: black;
+}
+.login-page{
+    width: 350px;
+    height: 450px;
+    background:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .4s;
+    border-radius: 50px;
+}
+.login-page:hover{
+    box-shadow: 0 0 10000px white;
+}
+.login-page h1{
+    margin-bottom: 30px;
+}
+.login-page form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-page form input  {
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    background: rgb(218, 218, 218);
+    border: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    transition: all .4s;
+}
+.login-page form input:focus{
+    background: rgb(194, 194, 194);
+}
+.login-page form .btn{
+    width: 250px;
+    height: 35px;
+    margin: 8px;
+    background:red;
+    color: #e2e2e2;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+.login-page form .btn:hover{
+    background: green;
+}
+.icons{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons div{
+    width: 122px;
+    height: 40px;
+    border: 2px solid #3b5998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    transition: all .4s;
+    cursor: pointer;
+}
+.icons div:nth-child(2){
+    border: 2px solid #4285f4;
+}
+.icons div i{
+    color: #3b5998;
+    margin: 8px;
+    transition: all .4s;
+}
+.icons div:hover i{
+    color: #e2e2e2;
+}
+.icons div .fa-google{
+    color: #4285f4;
+}
+.icons div:hover:nth-child(1){
+    background: #3b5998;
+    color: #e2e2e2;
+}
+.icons div:hover:nth-child(2){
+    background: #4285f4;
+    color: #e2e2e2;
+}
